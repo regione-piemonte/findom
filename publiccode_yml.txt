@@ -1,0 +1,83 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - application-development
+dependsOn:
+  open:
+    - name: Postgresql
+      optional: false
+      version: ''
+      versionMax: '9.6'
+      versionMin: '9.2'
+  proprietary:
+    - name: Redhat JBOSS
+      optional: false
+      version: ' 6.4 EAP'
+      versionMax: ''
+      versionMin: ''
+description:
+  it:
+    features:
+      - Compilazione di istanze di  finanziamento
+      - Invio di istanze di  finanziamento
+      - Ricerca di istanze di  finanziamento
+      - Stampa di istanze di  finanziamento
+    genericName: Finanziamento Domande
+    localisedName: FINDOM
+    longDescription: |
+      Tramite il prodotto il soggetto che si e' autenticato puo'
+        - ricercare le domande gia' inserite disponibili in quanto abilitato ad operare per conto dell'Impresa/Ente proprietario dell'istanza;
+        - selezionare una domanda esistente, per la sua modifica o cancellazione, qualora non sia gia' stata formalmente inviata, oppure per la sola consultazione;
+        - inserire una nuova domanda relativamente ad uno specifico bando.
+      Accedendo ad una singola domanda sono disponibili le funzionalita' utili
+      alla compilazione delle sezioni informative:
+        - Anagrafica (Beneficiario, Riferimenti)
+        - Dati Impresa (Profilo dell'impresa, Dati di Bilancio, Dimensioni)
+        - Progetto (Informazioni sul progetto, Sede, Spese, Aiuti e agevolazioni, Indicatori)
+        - Documentazione (Allegati alla domanda, Dichiarazioni)
+      nonche' alla  Verifica della correttezza dei dati inseriti, alla Stampa e
+      all'Invio formale della domanda. L'applicativo supporta la
+      dematerializzazione dei documenti.
+    shortDescription: |
+      Permettere la compilazione di istanze di finanziamento relative a bandi
+      pubblicati nell'ambito del Fondo Europeo per lo Sviluppo regionale.
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: true
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: true
+    pagopa: false
+    spid: true
+  riuso:
+    codiceIPA: r_piemon
+legal:
+  license: EUPL-1.2
+  mainCopyrightOwner: Regione Piemonte
+  repoOwner: Regione Piemonte
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: marco.pochettino@csi.it
+      name: Marco Pochettino
+  type: community
+name: FINDOM
+platforms:
+  - web
+releaseDate: '2020-10-30'
+softwareType: standalone/web
+softwareVersion: 10.5.0
+url: 'https://github.com/regione-piemonte/findom'
+usedBy:
+  - Regione Piemonte
