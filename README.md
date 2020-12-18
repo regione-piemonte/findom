@@ -5,7 +5,14 @@ FINDOM - Finanziamento Domande
 This product allow the authenticated user to insert-edit-delete funding request to access at the European Regional Developement Found
 
 # Getting Started
-Clone the components : findomrouter, findomwebnew, findomdb, findomwebres by the git repository
+This product is composed by these components:
+- [FINDOMROUTER](https://github.com/regione-piemonte/findom-findomrouter) (web application that allows users to login, search, create and delete "funding request")
+- [FINDOMWEBNEW](https://github.com/regione-piemonte/findom-findomwebnew) (web application that allows users to create and visualize pages of one or more "funding request")
+- [FINDOMDB](https://github.com/regione-piemonte/findom-findomdb) (scripts to popolate the database schema)
+- [FINDOMWEBRES](https://github.com/regione-piemonte/findom-findomwebres) (graphics resources (css, img and js))
+- [BLOCCHETTI](https://github.com/regione-piemonte/findom-blocchetti) (library of bricks needed to compose a "funding request")
+ 
+Clone all these components by the git repository
 
 # Prerequisites
 A Postgresql user/schema with CREATE/INSERT/UPDATE/DELETE privileges
